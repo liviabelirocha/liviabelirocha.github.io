@@ -11,7 +11,7 @@ export default createGlobalStyle`
 		background: ${props => props.theme.colors.backgroundPrimary};
 		color: ${props => props.theme.colors.textSecondary};
 		font: 400 16px Gilroy, sans-serif;
+		
 	}
 
-	
 `
