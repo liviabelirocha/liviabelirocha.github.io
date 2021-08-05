@@ -4,7 +4,7 @@ export const Container = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 8rem;
+	margin: 8rem 0;
 `
 
 export const Shadow = styled.p`
@@ -12,11 +12,10 @@ export const Shadow = styled.p`
 	justify-content: center;
 	align-items: center;
 	color: ${props => props.theme.colors.textSecondary};
-	font: 800 144px Gilroy;
+	font: 800 144px 'Open Sans';
 	line-height: 176px;
 	letter-spacing: 0.055em;
 	opacity: 0.02;
-	position: absolute;
 `
 
 export const Text = styled.p`
@@ -24,7 +23,7 @@ export const Text = styled.p`
 	justify-content: center;
 	align-items: center;
 	color: ${props => props.theme.colors.textPrimary};
-	font: 800 64px Gilroy;
+	font: 800 64px 'Open Sans';
 	line-height: 78px;
 	letter-spacing: 0.01em;
 	position: absolute;

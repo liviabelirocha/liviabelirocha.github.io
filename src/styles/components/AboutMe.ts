@@ -5,7 +5,10 @@ export const Container = styled.div`
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	width: 100%;
+	width: 100vw;
+	background: ${props => props.theme.colors.backgroundSecondary};
+	padding-bottom: 5rem;
+	z-index: -2;
 `
 
 export const Content = styled.div`
@@ -14,6 +17,14 @@ export const Content = styled.div`
 	align-items: center;
 	justify-content: space-around;
 	width: 100%;
+
+	@media (max-width: 1600px) {
+		justify-content: space-between;
+	}
+
+	@media (max-width: 1488px) {
+		flex-direction: column;
+	}
 `
 
 export const ProfilePic = styled.div`
@@ -21,6 +32,10 @@ export const ProfilePic = styled.div`
 
 	img {
 		width: 25rem;
+	}
+
+	@media (max-width: 1488px) {
+		margin-bottom: 10rem;
 	}
 `
 
