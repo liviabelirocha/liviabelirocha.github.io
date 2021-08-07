@@ -42,13 +42,10 @@ export default class MyDocument extends Document {
 			<Html lang="pt">
 				<Head>
 					<meta charSet="utf-8" />
-
 					<link
 						href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap"
 						rel="stylesheet"
 					/>
-
-					<title>Lívia Belizário</title>
 				</Head>
 				<body>
 					<Main />

@@ -7,7 +7,7 @@ export const Container = styled.div`
 	flex-direction: column;
 	width: 100vw;
 	background: ${props => props.theme.colors.backgroundSecondary};
-	padding-bottom: 5rem;
+	padding-bottom: 15rem;
 	z-index: -2;
 `
 

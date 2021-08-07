@@ -8,10 +8,9 @@ export default createGlobalStyle`
 	}
 
 	body {
-		background: ${props => props.theme.colors.backgroundPrimary};
+		background: ${props => props.theme.colors.backgroundTerciary};
 		color: ${props => props.theme.colors.textSecondary};
-		font: 400 16px 'Open Sans', sans-serif;
-		
+		font: 300 16px 'Open Sans';
 	}
 
 `

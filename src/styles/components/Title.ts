@@ -24,7 +24,7 @@ export const Text = styled.p`
 	align-items: center;
 	color: ${props => props.theme.colors.textPrimary};
 	font: 800 64px 'Open Sans';
-	line-height: 78px;
+	line-height: 87px;
 	letter-spacing: 0.01em;
 	position: absolute;
 `

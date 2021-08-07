@@ -1,9 +1,9 @@
-import { Container, Flags } from '../styles/components/Intro'
+import { Container, Flags } from '../../styles/components/Intro'
 
-import Logo from '../assets/initialLogo.svg'
-import GithubLogo from '../assets/github2.svg'
-import BrFlag from '../assets/br.svg'
-import EnFlag from '../assets/en.svg'
+import Logo from '../../assets/initialLogo.svg'
+import GithubLogo from '../../assets/github2.svg'
+import BrFlag from '../../assets/br.svg'
+import EnFlag from '../../assets/en.svg'
 
 export default function Intro() {
 	return (

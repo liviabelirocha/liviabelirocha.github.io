@@ -5,12 +5,12 @@ import {
 	ProfilePic,
 	Square,
 	Social
-} from '../styles/components/AboutMe'
+} from '../../styles/components/AboutMe'
 
-import Title from './Title'
+import Title from '../Title'
 
-import InstagramIcon from '../assets/instagram.svg'
-import LinkedinIcon from '../assets/linkedin.svg'
+import InstagramIcon from '../../assets/instagram.svg'
+import LinkedinIcon from '../../assets/linkedin.svg'
 
 export default function AboutMe() {
 	return (
