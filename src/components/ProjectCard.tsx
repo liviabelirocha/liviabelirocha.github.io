@@ -1,19 +1,15 @@
 import { Container, Title, Description } from '../styles/components/ProjectCard'
 
-interface ProjectCard {
-	title: String
-	description: String
-	icon: any
-}
+import { ProjectCardInterface } from '../interfaces/ProjectCard'
 
 export default function ProjectCard({
 	title,
 	description,
 	icon: Icon
-}: ProjectCard) {
+}: ProjectCardInterface) {
 	return (
 		<Container>
-			<Icon />
+			<Icon size="4em" color="#bb1cff" />
 			<Title>{title}</Title>
 			<Description>{description}</Description>
 		</Container>

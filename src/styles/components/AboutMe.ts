@@ -15,11 +15,11 @@ export const Content = styled.div`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	width: 100%;
 
 	@media (max-width: 1600px) {
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 	@media (max-width: 1488px) {
@@ -29,6 +29,7 @@ export const Content = styled.div`
 
 export const ProfilePic = styled.div`
 	position: relative;
+	margin-right: 10rem;
 
 	img {
 		width: 25rem;
@@ -93,4 +94,8 @@ export const Social = styled.div`
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+
+	a {
+		color: ${props => props.theme.colors.textSecondary};
+	}
 `

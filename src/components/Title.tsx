@@ -1,11 +1,8 @@
 import { Container, Shadow, Text } from '../styles/components/Title'
 
-interface Title {
-	title: String
-	shadow: String
-}
+import { TitleInterface } from '../interfaces/Title'
 
-export default function Title({ title, shadow }: Title) {
+export default function Title({ title, shadow }: TitleInterface) {
 	return (
 		<Container>
 			<Shadow>{shadow}</Shadow>

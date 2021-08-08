@@ -5,6 +5,9 @@ import AboutMe from '../components/sections/AboutMe'
 import Intro from '../components/sections/Intro'
 import Projects from '../components/sections/Projects'
 import Experience from '../components/sections/Experience'
+import Skills from '../components/sections/Skills'
+
+import Footer from '../components/Footer'
 
 export default function Home() {
 	return (
@@ -17,6 +20,9 @@ export default function Home() {
 				<AboutMe />
 				<Projects />
 				<Experience />
+				<Skills />
+
+				<Footer />
 			</Container>
 		</>
 	)

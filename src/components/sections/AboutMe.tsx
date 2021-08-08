@@ -7,10 +7,10 @@ import {
 	Social
 } from '../../styles/components/AboutMe'
 
-import Title from '../Title'
+import { AiOutlineInstagram } from 'react-icons/ai'
+import { FaLinkedinIn } from 'react-icons/fa'
 
-import InstagramIcon from '../../assets/instagram.svg'
-import LinkedinIcon from '../../assets/linkedin.svg'
+import Title from '../Title'
 
 export default function AboutMe() {
 	return (
@@ -47,14 +47,14 @@ export default function AboutMe() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<InstagramIcon />
+							<AiOutlineInstagram size="2em" />
 						</a>
 						<a
 							href="https://www.linkedin.com/in/lívia-belizário-92997b162/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<LinkedinIcon />
+							<FaLinkedinIn size="2em" />
 						</a>
 					</Social>
 				</Info>
