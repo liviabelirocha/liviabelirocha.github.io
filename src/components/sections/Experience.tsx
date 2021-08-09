@@ -4,6 +4,8 @@ import {
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 
+import useTranslation from '../../hooks/useTranslation'
+
 import { Container } from '../../styles/components/Experience'
 
 import Title from '../Title'
@@ -11,25 +13,30 @@ import Title from '../Title'
 import { IoHourglassOutline, IoLogoNodejs, IoLogoVue } from 'react-icons/io5'
 import { DiDjango } from 'react-icons/di'
 
-const experiences = [
-	{
-		key: 1,
-		title: 'Falco Dev 2021 - Present',
-		description: 'Fullstack Developer',
-		icons: [IoLogoNodejs, IoLogoVue]
-	},
-	{
-		key: 2,
-		title: 'EadGuru 2020 - 2021',
-		description: 'Fullstack Developer',
-		icons: [DiDjango, IoLogoVue]
-	}
-]
-
 export default function Experience() {
+	const { t } = useTranslation()
+
+	const experiences = [
+		{
+			key: 1,
+			title: `Falco Dev 2021 - ${t('status')}`,
+			description: t('desc'),
+			icons: [IoLogoNodejs, IoLogoVue]
+		},
+		{
+			key: 2,
+			title: 'EadGuru 2020 - 2021',
+			description: t('desc'),
+			icons: [DiDjango, IoLogoVue]
+		}
+	]
+
 	return (
 		<Container>
-			<Title title="Experience" shadow="Experience" />
+			<Title
+				title={t('experienceTitle')}
+				shadow={t('experienceSubtitle')}
+			/>
 			<VerticalTimeline>
 				{experiences.map(experience => (
 					<VerticalTimelineElement

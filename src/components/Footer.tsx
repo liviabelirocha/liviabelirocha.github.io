@@ -5,10 +5,13 @@ import {
 	AiFillHeart
 } from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa'
+import useTranslation from '../hooks/useTranslation'
 
 import { Container, Icons, Design } from '../styles/components/Footer'
 
 export default function Footer() {
+	const { t } = useTranslation()
+
 	return (
 		<Container>
 			<Icons>
@@ -38,7 +41,8 @@ export default function Footer() {
 				Copyright <AiOutlineCopyrightCircle /> Lívia Belizário Rocha
 			</p>
 			<Design>
-				Design made with &nbsp; <AiFillHeart color="red" /> &nbsp; by
+				{t('footerText')} &nbsp; <AiFillHeart color="red" /> &nbsp;{' '}
+				{t('by')}
 				&nbsp;
 				<a
 					href="https://www.behance.net/dominicpersaud"

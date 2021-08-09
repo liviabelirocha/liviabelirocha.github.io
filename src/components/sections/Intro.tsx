@@ -1,4 +1,7 @@
+import { useRouter } from 'next/router'
 import { Container, Flags } from '../../styles/components/Intro'
+
+import useTranslation from '../../hooks/useTranslation'
 
 import Logo from '../../assets/initialLogo.svg'
 import GithubLogo from '../../assets/github2.svg'
@@ -6,6 +9,15 @@ import BrFlag from '../../assets/br.svg'
 import EnFlag from '../../assets/en.svg'
 
 export default function Intro() {
+	const { t, setLocale } = useTranslation()
+
+	function handleLocaleChange(language: string) {
+		if (!window) return
+
+		localStorage.setItem('lang', language)
+		setLocale(language)
+	}
+
 	return (
 		<Container>
 			<a
@@ -16,13 +28,19 @@ export default function Intro() {
 				<GithubLogo className="github-logo" />
 			</a>
 			<Logo className="pc-logo" />
-			<p>Hello, I am</p>
+			<p>{t('hello')}</p>
 			<b>Lívia Belizário</b>
-			<small>Fullstack Developer</small>
+			<small>{t('dev')}</small>
 
 			<Flags>
-				<BrFlag className="flag" />
-				<EnFlag className="flag" />
+				<BrFlag
+					className="flag"
+					onClick={() => handleLocaleChange('pt')}
+				/>
+				<EnFlag
+					className="flag"
+					onClick={() => handleLocaleChange('en')}
+				/>
 			</Flags>
 		</Container>
 	)

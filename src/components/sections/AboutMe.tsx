@@ -10,12 +10,16 @@ import {
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa'
 
+import useTranslation from '../../hooks/useTranslation'
+
 import Title from '../Title'
 
 export default function AboutMe() {
+	const { t } = useTranslation()
+
 	return (
 		<Container>
-			<Title title="About Me" shadow="About" />
+			<Title title={t('aboutTitle')} shadow={t('aboutSubtitle')} />
 
 			<Content>
 				<ProfilePic>
@@ -25,21 +29,13 @@ export default function AboutMe() {
 
 				<Info>
 					<h1>
-						My name is <span>Lívia Belizário Rocha</span>
+						{t('hello')} <span>Lívia Belizário Rocha</span>
 					</h1>
-					<p>
-						I'm passionate about Web Development. Started
-						programming at the age of 17. By the age of 18, I
-						discoved React and completely fell in love with it. I
-						also love backend, especially NodeJs and Django! My goal
-						in life is to become an excellent professional, so that
-						I can ensure a nice and comfortable life for me and my
-						family :)
-					</p>
+					<p>{t('about')}</p>
 					<h2>Email</h2>
 					<span>liviabelirocha@outlook.com</span>
-					<h2>Education</h2>
-					<span>Federal University of Ceará</span>
+					<h2>{t('ed')}</h2>
+					<span>{t('ufc')}</span>
 
 					<Social>
 						<a

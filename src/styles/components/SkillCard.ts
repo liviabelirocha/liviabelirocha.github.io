@@ -10,7 +10,16 @@ export const Container = styled.div`
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 5rem;
+	margin: 2.5rem;
+	transition: 0.2s;
+
+	:hover {
+		transform: scale(1.1);
+	}
+
+	.skill-icon {
+		margin-right: 1rem;
+	}
 `
 
 export const Name = styled.h1`
