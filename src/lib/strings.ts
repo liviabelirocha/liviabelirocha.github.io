@@ -28,7 +28,11 @@ export const langStrings = {
 		s: 'Studying',
 
 		footerText: 'Design made with',
-		by: 'by'
+		by: 'by',
+
+		lost: 'Got lost?',
+		cantFind: "We couldn't find the page you were looking for",
+		back: 'Back to Homepage'
 	},
 	pt: {
 		hello: 'Olá, eu sou',
@@ -59,6 +63,11 @@ export const langStrings = {
 		s: 'Estudando',
 
 		footerText: 'Design feito com',
-		by: 'por'
+		by: 'por',
+
+		lost: 'Se perdeu?',
+		cantFind:
+			'Não conseguimos encontrar a página que você está procurando ',
+		back: 'Voltar para a Homepage'
 	}
 }

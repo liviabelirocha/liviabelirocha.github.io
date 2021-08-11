@@ -18,8 +18,9 @@
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx",
-		"src/hooks/useTranslation.jsx",
-		"src/contexts/LanguageContext.jsx"
+		"src/hooks/useTranslation.js",
+		"src/contexts/LanguageContext.jsx",
+		"src/hooks/useTranslation.js"
 	],
 	"exclude": ["node_modules"]
 }

@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import { Container, Flags } from '../../styles/components/Intro'
 
 import useTranslation from '../../hooks/useTranslation'

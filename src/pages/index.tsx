@@ -7,6 +7,7 @@ import Projects from '../components/sections/Projects'
 import Experience from '../components/sections/Experience'
 import Skills from '../components/sections/Skills'
 
+import Divider from '../components/Divider'
 import Footer from '../components/Footer'
 
 export default function Home() {
@@ -17,9 +18,13 @@ export default function Home() {
 			</Head>
 			<Container>
 				<Intro />
+				<Divider goUp={false} />
 				<AboutMe />
+				<Divider goUp={true} />
 				<Projects />
+				<Divider goUp={false} />
 				<Experience />
+				<Divider goUp={true} />
 				<Skills />
 
 				<Footer />
