@@ -9,6 +9,6 @@ export const Container = styled.div`
 	overflow-x: hidden;
 
 	@media (max-width: 1488px) {
-		padding: 0 2rem;
+		padding: 0 38px;
 	}
 `

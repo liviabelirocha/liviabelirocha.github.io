@@ -20,4 +20,10 @@ export const Title = styled.h1`
 	color: ${props => props.theme.colors.textPrimary};
 	margin-bottom: 5rem;
 	margin-top: 3rem;
+
+	@media (max-width: 768px) {
+		font-size: 24px;
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+	}
 `

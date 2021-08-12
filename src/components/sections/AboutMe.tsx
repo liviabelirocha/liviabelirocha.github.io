@@ -29,7 +29,7 @@ export default function AboutMe() {
 
 				<Info>
 					<h1>
-						{t('hello')} <span>Lívia Belizário Rocha</span>
+						{t('myName')} <span>Lívia Belizário Rocha</span>
 					</h1>
 					<p>{t('about')}</p>
 					<h2>Email</h2>

@@ -1,4 +1,4 @@
 export interface TitleInterface {
-	title: String
-	shadow: String
+	title: string
+	shadow: string
 }

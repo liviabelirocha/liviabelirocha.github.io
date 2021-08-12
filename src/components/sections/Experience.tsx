@@ -10,7 +10,8 @@ import { Container } from '../../styles/components/Experience'
 
 import Title from '../Title'
 
-import { IoHourglassOutline, IoLogoNodejs, IoLogoVue } from 'react-icons/io5'
+import { IoLogoNodejs, IoLogoVue } from 'react-icons/io5'
+import { IoIosHourglass } from 'react-icons/io'
 import { DiDjango } from 'react-icons/di'
 
 export default function Experience() {
@@ -48,6 +49,10 @@ export default function Experience() {
 						contentArrowStyle={{
 							borderRight: '7px solid #191919'
 						}}
+						iconStyle={{
+							background: '#bb1cff',
+							color: '#fff'
+						}}
 					>
 						<h3 className="vertical-timeline-element-title title">
 							{experience.title}
@@ -71,7 +76,7 @@ export default function Experience() {
 						color: '#fff',
 						background: '#bb1cff'
 					}}
-					icon={<IoHourglassOutline />}
+					icon={<IoIosHourglass />}
 				/>
 			</VerticalTimeline>
 		</Container>

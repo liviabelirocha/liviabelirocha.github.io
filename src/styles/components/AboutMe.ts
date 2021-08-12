@@ -37,6 +37,13 @@ export const ProfilePic = styled.div`
 
 	@media (max-width: 1488px) {
 		margin-bottom: 10rem;
+		margin-right: 2rem;
+	}
+
+	@media (max-width: 768px) {
+		img {
+			width: 12.5rem;
+		}
 	}
 `
 
@@ -48,6 +55,12 @@ export const Square = styled.div`
 	top: 3rem;
 	left: 4rem;
 	z-index: -1;
+
+	@media (max-width: 768px) {
+		width: 12.5rem;
+		height: 15.5rem;
+		left: 2rem;
+	}
 `
 
 export const Info = styled.div`
@@ -63,28 +76,42 @@ export const Info = styled.div`
 		letter-spacing: 2px;
 
 		span {
-			font-size: 24px;
 			color: ${props => props.theme.colors.textPrimary};
+			font: 800 24px 'Open Sans';
 		}
-	}
-
-	span,
-	p {
-		line-height: 20.75px;
 	}
 
 	p,
 	span {
-		font-size: 16px;
+		font: 300 16px 'Open Sans';
 		max-width: 28rem;
 		margin-bottom: 1rem;
 		word-wrap: break-word;
+		line-height: 20.75px;
 	}
 
 	h2 {
 		font-size: 18px;
 		color: ${props => props.theme.colors.textPrimary};
 		line-height: 22.05px;
+	}
+
+	@media (max-width: 768px) {
+		align-items: center;
+		padding: 0 38px;
+
+		h1 {
+			font-size: 18px;
+			span {
+				font-size: 18px;
+			}
+		}
+
+		p,
+		span,
+		h2 {
+			font-size: 12px;
+		}
 	}
 `
 

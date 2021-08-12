@@ -5,6 +5,10 @@ export const Container = styled.div`
 	justify-content: center;
 	align-items: center;
 	margin: 8rem 0;
+
+	@media (max-width: 768px) {
+		margin: 4rem 0;
+	}
 `
 
 export const Shadow = styled.p`
@@ -16,6 +20,10 @@ export const Shadow = styled.p`
 	line-height: 176px;
 	letter-spacing: 0.055em;
 	opacity: 0.02;
+
+	@media (max-width: 768px) {
+		font-size: 56px;
+	}
 `
 
 export const Text = styled.p`
@@ -27,4 +35,9 @@ export const Text = styled.p`
 	line-height: 87px;
 	letter-spacing: 0.01em;
 	position: absolute;
+
+	@media (max-width: 768px) {
+		font-size: 36px;
+		letter-spacing: 0.01em;
+	}
 `

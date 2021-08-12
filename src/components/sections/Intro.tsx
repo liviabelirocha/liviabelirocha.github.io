@@ -27,9 +27,11 @@ export default function Intro() {
 				<GithubLogo className="github-logo" />
 			</a>
 			<Logo className="pc-logo" />
-			<p>{t('hello')}</p>
-			<b>Lívia Belizário</b>
-			<small>{t('dev')}</small>
+			<div className="texts">
+				<p>{t('hello')}</p>
+				<b>Lívia Belizário</b>
+				<small>{t('dev')}</small>
+			</div>
 
 			<Flags>
 				<BrFlag

@@ -16,13 +16,15 @@ export default function Projects() {
 			key: 1,
 			title: 'WheatTabs',
 			description: t('wt'),
-			icon: GiWheat
+			icon: GiWheat,
+			link: 'https://wheattabs.herokuapp.com'
 		},
 		{
 			key: 2,
 			title: 'Plant Daddy',
 			description: t('pd'),
-			icon: RiPlantLine
+			icon: RiPlantLine,
+			link: 'https://www.behance.net/gallery/119747057/Plant-Daddy-App-UIUX-Webdesign'
 		}
 	]
 
@@ -37,6 +39,7 @@ export default function Projects() {
 							description={project.description}
 							icon={project.icon}
 							key={project.key}
+							link={project.link}
 						/>
 					)
 				})}

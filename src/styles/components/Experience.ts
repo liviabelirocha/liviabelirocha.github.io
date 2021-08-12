@@ -9,16 +9,6 @@ export const Container = styled.div`
 	justify-content: center;
 	padding-bottom: 15rem;
 
-	.vertical-timeline::before {
-		background: ${props => props.theme.colors.textPrimary};
-	}
-
-	.vertical-timeline-element-icon {
-		box-shadow: 0 0 0 1px ${props => props.theme.colors.textPrimary},
-			inset 0 1px 0 rgb(0 0 0 / 8%), 0 1px 0 1px rgb(0 0 0 / 5%);
-		background: ${props => props.theme.colors.textPrimary};
-	}
-
 	.title {
 		color: ${props => props.theme.colors.textPrimary};
 	}

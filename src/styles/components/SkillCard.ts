@@ -10,7 +10,7 @@ export const Container = styled.div`
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin: 2.5rem;
+	margin: 1rem 2.5rem;
 	transition: 0.2s;
 
 	:hover {
@@ -20,10 +20,20 @@ export const Container = styled.div`
 	.skill-icon {
 		margin-right: 1rem;
 	}
+
+	@media (max-width: 768px) {
+		width: 200px;
+		height: 75px;
+		margin: 1rem;
+	}
 `
 
 export const Name = styled.h1`
 	font: 800 20px 'Open Sans';
 	line-height: 33px;
 	letter-spacing: 0.0055em;
+
+	@media (max-width: 768px) {
+		font-size: 16px;
+	}
 `

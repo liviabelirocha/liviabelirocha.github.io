@@ -7,6 +7,11 @@ export const Container = styled.div`
 	padding: 5rem 0;
 	margin-top: 12rem;
 
+	.texts {
+		display: flex;
+		flex-direction: column;
+	}
+
 	p {
 		line-height: 98px;
 		font-size: 72px;
@@ -34,6 +39,25 @@ export const Container = styled.div`
 
 	.pc-logo {
 		margin-bottom: 2rem;
+	}
+
+	@media (max-width: 768px) {
+		align-items: center;
+
+		p {
+			font-size: 24px;
+			line-height: 33px;
+		}
+
+		b {
+			font-size: 30px;
+			line-height: 41px;
+		}
+
+		small {
+			font-size: 18px;
+			line-height: 25px;
+		}
 	}
 `
 

@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 
 import useTranslation from '../hooks/useTranslation'
 
@@ -18,19 +19,24 @@ export default function Custom404() {
 	const router = useRouter()
 
 	return (
-		<WholePage>
-			<Container>
-				<Robot404 />
-				<Content>
-					<h2>{t('lost')}</h2>
-					<h1>404</h1>
-					<p>{t('cantFind')}</p>
-					<Button onClick={() => router.push('/')}>
-						{t('back')}
-					</Button>
-				</Content>
-			</Container>
-			<Footer />
-		</WholePage>
+		<>
+			<Head>
+				<title>404 - Página não encontrada</title>
+			</Head>
+			<WholePage>
+				<Container>
+					<Robot404 />
+					<Content>
+						<h2>{t('lost')}</h2>
+						<h1>404</h1>
+						<p>{t('cantFind')}</p>
+						<Button onClick={() => router.push('/')}>
+							{t('back')}
+						</Button>
+					</Content>
+				</Container>
+				<Footer />
+			</WholePage>
+		</>
 	)
 }

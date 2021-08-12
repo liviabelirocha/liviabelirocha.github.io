@@ -1,5 +1,6 @@
 export interface ProjectCardInterface {
-	title: String
-	description: String
+	title: string
+	description: string
 	icon: any
+	link: string
 }

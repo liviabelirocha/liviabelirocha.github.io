@@ -1,6 +1,6 @@
 export interface SkillInterface {
 	icon?: any
-	name?: String
+	name?: string
 }
 
 export interface SkillSectionInterface {

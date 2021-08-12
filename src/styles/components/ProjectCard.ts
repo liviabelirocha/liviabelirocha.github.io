@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.a`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -11,6 +11,8 @@ export const Container = styled.div`
 	padding: 2rem 1rem;
 	margin: 2rem;
 	transition: 0.2s;
+	text-decoration: none;
+	color: ${props => props.theme.colors.textSecondary};
 
 	:hover {
 		transform: scale(1.1);
