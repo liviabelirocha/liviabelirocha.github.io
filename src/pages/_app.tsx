@@ -1,10 +1,10 @@
-import type { AppProps } from 'next/app'
-import { ThemeProvider } from 'styled-components'
+import type { AppProps } from "next/app";
+import { ThemeProvider } from "styled-components";
 
-import { LanguageProvider } from '../contexts/LanguageContext'
+import { LanguageProvider } from "../contexts/LanguageContext";
 
-import GlobalStyle from '../styles/global'
-import theme from '../styles/theme'
+import GlobalStyle from "../styles/global";
+import theme from "../styles/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
@@ -14,6 +14,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<GlobalStyle />
 			</ThemeProvider>
 		</LanguageProvider>
-	)
+	);
 }
-export default MyApp
+export default MyApp;

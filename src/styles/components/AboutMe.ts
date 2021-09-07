@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Container = styled.div`
 	display: flex;
@@ -6,10 +6,10 @@ export const Container = styled.div`
 	align-items: center;
 	flex-direction: column;
 	width: 100vw;
-	background: ${props => props.theme.colors.backgroundSecondary};
+	background: ${(props) => props.theme.colors.backgroundSecondary};
 	padding-bottom: 15rem;
 	z-index: -2;
-`
+`;
 
 export const Content = styled.div`
 	display: flex;
@@ -25,7 +25,7 @@ export const Content = styled.div`
 	@media (max-width: 1488px) {
 		flex-direction: column;
 	}
-`
+`;
 
 export const ProfilePic = styled.div`
 	position: relative;
@@ -45,12 +45,12 @@ export const ProfilePic = styled.div`
 			width: 12.5rem;
 		}
 	}
-`
+`;
 
 export const Square = styled.div`
 	width: 25rem;
 	height: 29rem;
-	border: 10px solid ${props => props.theme.colors.textPrimary};
+	border: 10px solid ${(props) => props.theme.colors.textPrimary};
 	position: absolute;
 	top: 3rem;
 	left: 4rem;
@@ -61,7 +61,7 @@ export const Square = styled.div`
 		height: 15.5rem;
 		left: 2rem;
 	}
-`
+`;
 
 export const Info = styled.div`
 	display: flex;
@@ -76,14 +76,14 @@ export const Info = styled.div`
 		letter-spacing: 2px;
 
 		span {
-			color: ${props => props.theme.colors.textPrimary};
-			font: 800 24px 'Open Sans';
+			color: ${(props) => props.theme.colors.textPrimary};
+			font: 800 24px "Open Sans";
 		}
 	}
 
 	p,
 	span {
-		font: 300 16px 'Open Sans';
+		font: 300 16px "Open Sans";
 		max-width: 28rem;
 		margin-bottom: 1rem;
 		word-wrap: break-word;
@@ -92,7 +92,7 @@ export const Info = styled.div`
 
 	h2 {
 		font-size: 18px;
-		color: ${props => props.theme.colors.textPrimary};
+		color: ${(props) => props.theme.colors.textPrimary};
 		line-height: 22.05px;
 	}
 
@@ -113,16 +113,4 @@ export const Info = styled.div`
 			font-size: 12px;
 		}
 	}
-`
-
-export const Social = styled.div`
-	width: 20%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-
-	a {
-		color: ${props => props.theme.colors.textSecondary};
-	}
-`
+`;
