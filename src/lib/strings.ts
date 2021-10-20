@@ -14,6 +14,7 @@ export const langStrings = {
 		projectsSubtitle: "Project",
 		wt: "It was the first website I made when I really started focusing on web dev. It lists my Youtube videos (song covers) and redirects the user to a PDF hosted on AWS that contains the tabs for the song. It is made with React, NodeJs with Express and MongoDb.",
 		pd: "It is a React Native app that has information on several plants, and the user can add plants to his account, and set reminders to water and fertilize the plant. The backend is made with NodeJs with Express. All of that using Typescript.",
+		falco: "It is a One Page Institutional Website for a Technology Company, it is front-end only and made with Next Js, it also uses EmailJs. I made this project in a bit less than a week, thinking about the design as I went, so that was a bit more challenging.",
 
 		experienceTitle: "Experience",
 		experienceSubtitle: "Experience",
@@ -49,6 +50,7 @@ export const langStrings = {
 		projectsSubtitle: "Projeto",
 		wt: "Foi o primeiro site que fiz quando realmente comecei a focar em desenvolvimento web. Ele lista meus vídeos no Youtube (covers de música) a redireciona o usuário para o PDF hosteado na AWS que contém a tab para a música. Foi feito com React, NodeJs com Express e MongoDb.",
 		pd: "É um aplicativo em React Native que contém informações sobre diversas plantas, no qual o usuário pode adicionar plantas à sua conta e marcar lembretes para agoar e fertilizar a planta. O backend é feito com NodeJs e Express. Todo o projeto utiliza Typescript.",
+		falco: "É um One Page Institucional para uma empresa de tecnologia, é um projeto inteiramente front-end, feito com NextJs, utiliza também EmailJs. Fiz esse projeto em pouco menos de uma semana, fazendo o design na hora, então foi um desafio a mais, porém fiquei bem orgulhosa do resultado.",
 
 		experienceTitle: "Experiência",
 		experienceSubtitle: "Experiência",

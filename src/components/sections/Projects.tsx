@@ -5,7 +5,7 @@ import useTranslation from "../../hooks/useTranslation";
 import ProjectCard from "../ProjectCard";
 import Title from "../Title";
 
-import { GiWheat } from "react-icons/gi";
+import { GiWheat, GiLibertyWing } from "react-icons/gi";
 import { RiPlantLine } from "react-icons/ri";
 
 export default function Projects() {
@@ -25,6 +25,13 @@ export default function Projects() {
 			description: t("pd"),
 			icon: RiPlantLine,
 			link: "https://github.com/plant-daddy",
+		},
+		{
+			key: 3,
+			title: "Falco Website",
+			description: t("falco"),
+			icon: GiLibertyWing,
+			link: "https://falcodev.com.br",
 		},
 	];
 
