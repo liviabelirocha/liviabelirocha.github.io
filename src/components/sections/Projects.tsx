@@ -5,8 +5,9 @@ import useTranslation from "../../hooks/useTranslation";
 import ProjectCard from "../ProjectCard";
 import Title from "../Title";
 
-import { GiWheat, GiLibertyWing } from "react-icons/gi";
+import { GiWheat, GiLibertyWing, GiMusicalNotes } from "react-icons/gi";
 import { RiPlantLine } from "react-icons/ri";
+import { CgScreen } from "react-icons/cg";
 
 export default function Projects() {
 	const { t } = useTranslation();
@@ -32,6 +33,20 @@ export default function Projects() {
 			description: t("falco"),
 			icon: GiLibertyWing,
 			link: "https://falcodev.com.br",
+		},
+		{
+			key: 4,
+			title: "Dominic Persaud Portfolio",
+			description: t("dp"),
+			icon: CgScreen,
+			link: "https://github.com/liviabelirocha/dp-portfolio",
+		},
+		{
+			key: 5,
+			title: "CupkakKe Bot",
+			description: t("cupkakke"),
+			icon: GiMusicalNotes,
+			link: "https://github.com/liviabelirocha/cupkakKe-bot",
 		},
 	];
 
