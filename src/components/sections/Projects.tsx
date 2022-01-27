@@ -29,20 +29,13 @@ export default function Projects() {
 		},
 		{
 			key: 3,
-			title: "Falco Website",
-			description: t("falco"),
-			icon: GiLibertyWing,
-			link: "https://falcodev.com.br",
-		},
-		{
-			key: 4,
 			title: "Dominic Persaud Portfolio",
 			description: t("dp"),
 			icon: CgScreen,
 			link: "https://github.com/liviabelirocha/dp-portfolio",
 		},
 		{
-			key: 5,
+			key: 4,
 			title: "CupkakKe Bot",
 			description: t("cupkakke"),
 			icon: GiMusicalNotes,
