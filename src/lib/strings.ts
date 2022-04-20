@@ -6,7 +6,7 @@ export const langStrings = {
 		aboutTitle: "About me",
 		aboutSubtitle: "About",
 		myName: "My name is",
-		about: "I'm passionate about Web Development. Started programming at the age of 17. By the age of 18, I discovered React and completely fell in love with it. I also love backend, especially NodeJs and Django! My goal in life is to become an excellent professional, so that I can ensure a nice and comfortable life for me and my family :)",
+		about: "I'm passionate about Web Development. Started programming at the age of 17. By the age of 18, I discovered React and completely fell in love with it. I also love backend, especially NodeJs and Django! I think my goal in life is to eventually work with something that I know will have a positive impact on people's lives :)",
 		ed: "Education",
 		ufc: "Federal University of Ceará",
 
@@ -45,7 +45,7 @@ export const langStrings = {
 		aboutTitle: "Sobre mim",
 		aboutSubtitle: "Sobre",
 		myName: "Meu nome é",
-		about: "Eu sou apaixonada por Desenvolvimento Web. Comecei a programar com 17 anos de idade. Aos 18, descobri o React e me apaixonei completamente. Eu também amo o backend, especialmente NodeJs e Django! Meu objetivo na vida é me tornar uma profissional de excelência, para que eu possa garantir uma vida boa e confortável para mim e minha família :)",
+		about: "Eu sou apaixonada por Desenvolvimento Web. Comecei a programar com 17 anos de idade. Aos 18, descobri o React e me apaixonei completamente. Eu também amo o backend, especialmente NodeJs e Django! Meu objetivo na vida é eventualmente trabalhar em algo que eu sei que vai ter um impacto positivo na vida das pessoas :)",
 		ed: "Educação",
 		ufc: "Universidade Federal do Ceará",
 
