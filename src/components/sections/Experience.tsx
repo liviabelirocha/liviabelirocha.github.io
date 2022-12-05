@@ -1,57 +1,64 @@
 import {
 	VerticalTimeline,
-	VerticalTimelineElement
-} from 'react-vertical-timeline-component'
-import 'react-vertical-timeline-component/style.min.css'
+	VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
-import useTranslation from '../../hooks/useTranslation'
+import useTranslation from "../../hooks/useTranslation";
 
-import { Container } from '../../styles/components/Experience'
+import { Container } from "../../styles/components/Experience";
 
-import Title from '../Title'
+import Title from "../Title";
 
-import { IoLogoNodejs, IoLogoVue } from 'react-icons/io5'
-import { IoIosHourglass } from 'react-icons/io'
-import { DiDjango } from 'react-icons/di'
+import { IoLogoReact, IoLogoVue } from "react-icons/io5";
+import { IoIosHourglass } from "react-icons/io";
+import { DiDjango } from "react-icons/di";
+import { SiExpress, SiGooglecloud, SiSupabase } from "react-icons/si";
 
 export default function Experience() {
-	const { t } = useTranslation()
+	const { t } = useTranslation();
 
 	const experiences = [
 		{
 			key: 1,
-			title: `Falco Dev 2021 - ${t('status')}`,
-			description: t('desc'),
-			icons: [IoLogoNodejs, IoLogoVue]
+			title: `Quaddro 2021 - ${t("status")}`,
+			description: t("desc"),
+			icons: [SiExpress, IoLogoReact, SiSupabase, SiGooglecloud],
 		},
 		{
 			key: 2,
-			title: 'EadGuru 2020 - 2021',
-			description: t('desc'),
-			icons: [DiDjango, IoLogoVue]
-		}
-	]
+			title: `Falco Dev 2021 - 2022`,
+			description: t("desc"),
+			icons: [SiExpress, IoLogoVue],
+		},
+		{
+			key: 3,
+			title: "EadGuru 2020 - 2021",
+			description: t("desc"),
+			icons: [DiDjango, IoLogoVue],
+		},
+	];
 
 	return (
 		<Container>
 			<Title
-				title={t('experienceTitle')}
-				shadow={t('experienceSubtitle')}
+				title={t("experienceTitle")}
+				shadow={t("experienceSubtitle")}
 			/>
 			<VerticalTimeline>
-				{experiences.map(experience => (
+				{experiences.map((experience) => (
 					<VerticalTimelineElement
 						key={experience.key}
 						className="vertical-timeline-element--work custom-line"
 						contentStyle={{
-							background: '#191919'
+							background: "#191919",
 						}}
 						contentArrowStyle={{
-							borderRight: '7px solid #191919'
+							borderRight: "7px solid #191919",
 						}}
 						iconStyle={{
-							background: '#bb1cff',
-							color: '#fff'
+							background: "#bb1cff",
+							color: "#fff",
 						}}
 					>
 						<h3 className="vertical-timeline-element-title title">
@@ -73,12 +80,12 @@ export default function Experience() {
 				))}
 				<VerticalTimelineElement
 					iconStyle={{
-						color: '#fff',
-						background: '#bb1cff'
+						color: "#fff",
+						background: "#bb1cff",
 					}}
 					icon={<IoIosHourglass />}
 				/>
 			</VerticalTimeline>
 		</Container>
-	)
+	);
 }
