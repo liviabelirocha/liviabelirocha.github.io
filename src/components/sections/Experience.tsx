@@ -21,7 +21,7 @@ export default function Experience() {
 	const experiences = [
 		{
 			key: 1,
-			title: `Quaddro 2021 - ${t("status")}`,
+			title: `Quaddro 2022 - ${t("status")}`,
 			description: t("desc"),
 			icons: [SiExpress, IoLogoReact, SiSupabase, SiGooglecloud],
 		},
