@@ -5,9 +5,9 @@ import useTranslation from "../../hooks/useTranslation";
 import ProjectCard from "../ProjectCard";
 import Title from "../Title";
 
-import { GiWheat, GiLibertyWing, GiMusicalNotes } from "react-icons/gi";
+import { FaCalculator } from "react-icons/fa";
+import { GiBeerBottle, GiMusicalNotes, GiWheat } from "react-icons/gi";
 import { RiPlantLine } from "react-icons/ri";
-import { CgScreen } from "react-icons/cg";
 
 export default function Projects() {
 	const { t } = useTranslation();
@@ -15,27 +15,41 @@ export default function Projects() {
 	const projects = [
 		{
 			key: 1,
-			title: "WheatTabs",
-			description: t("wt"),
-			icon: GiWheat,
-			link: "https://wheattabs.herokuapp.com",
-		},
-		{
-			key: 2,
 			title: "Plant Daddy",
 			description: t("pd"),
 			icon: RiPlantLine,
 			link: "https://github.com/plant-daddy",
 		},
 		{
+			key: 2,
+			title: "4count",
+			description: t("4count"),
+			icon: FaCalculator,
+			link: "https://github.com/liviabelirocha/4count",
+		},
+		{
 			key: 3,
-			title: "Dominic Persaud Portfolio",
-			description: t("dp"),
-			icon: CgScreen,
-			link: "https://github.com/liviabelirocha/dp-portfolio",
+			title: "One Million Beers",
+			description: t("oneMillionBeers"),
+			icon: GiBeerBottle,
+			link: "https://github.com/liviabelirocha/one-million-beers",
 		},
 		{
 			key: 4,
+			title: "WheatTabs (frontend)",
+			description: t("wt"),
+			icon: GiWheat,
+			link: "https://github.com/liviabelirocha/tabs-frontend/",
+		},
+		{
+			key: 5,
+			title: "WheatTabs (backend)",
+			description: t("wt"),
+			icon: GiWheat,
+			link: "https://github.com/liviabelirocha/tabs-backend/",
+		},
+		{
+			key: 6,
 			title: "CupkakKe Bot",
 			description: t("cupkakke"),
 			icon: GiMusicalNotes,

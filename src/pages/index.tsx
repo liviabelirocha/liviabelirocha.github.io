@@ -1,14 +1,13 @@
-import Head from 'next/head'
-import { Container } from '../styles/pages/Home'
+import Head from "next/head";
+import { Container } from "../styles/pages/Home";
 
-import AboutMe from '../components/sections/AboutMe'
-import Intro from '../components/sections/Intro'
-import Projects from '../components/sections/Projects'
-import Experience from '../components/sections/Experience'
-import Skills from '../components/sections/Skills'
+import AboutMe from "../components/sections/AboutMe";
+import Experience from "../components/sections/Experience";
+import Intro from "../components/sections/Intro";
+import Projects from "../components/sections/Projects";
 
-import Divider from '../components/Divider'
-import Footer from '../components/Footer'
+import Divider from "../components/Divider";
+import Footer from "../components/Footer";
 
 export default function Home() {
 	return (
@@ -18,17 +17,17 @@ export default function Home() {
 			</Head>
 			<Container>
 				<Intro />
-				<Divider goUp={false} />
+				<Divider />
 				<AboutMe />
-				<Divider goUp={true} />
+				<Divider goUp />
 				<Projects />
-				<Divider goUp={false} />
+				<Divider />
 				<Experience />
-				<Divider goUp={true} />
-				<Skills />
+				{/* <Divider goUp={true} /> */}
+				{/* <Skills /> */}
 
 				<Footer />
 			</Container>
 		</>
-	)
+	);
 }

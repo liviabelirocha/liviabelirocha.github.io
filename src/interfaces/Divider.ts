@@ -1,3 +1,3 @@
 export interface DividerInterface {
-	goUp: boolean
+	goUp?: boolean;
 }

@@ -18,6 +18,10 @@ export const langStrings = {
 		dp: "It is a One Page portfolio made for a UX/UI designer made with NextJs and EmailJs.",
 		cupkakke:
 			"It is a Discord music bot made with Python. It receives names or youtube urls and plays the song.",
+		"4count":
+			"4count is an API that manages finances between groups. You input a value and who is supposed to pay for it, and the API calculates the balance of each user and who should pay who.",
+		oneMillionBeers:
+			"This is a simple app that serves the purpose of counting till one million beers! You can create your group and start adding the beers, and then see the metrics of the group's advances towards the goal!",
 
 		experienceTitle: "Experience",
 		experienceSubtitle: "Experience",
@@ -57,6 +61,10 @@ export const langStrings = {
 		dp: "É um portfólio One Page feito para um designer UX/UI. Foi feito com NextJs e EmailJs.",
 		cupkakke:
 			"É um bot para o Discord feito com Python. Ele recebe um nome ou um link do Youtube e toca a música.",
+		"4count":
+			"4count é uma API que gerencia finanças entre grupos. Você insere um valor e quem deve pagar por ele, e a API calcula o saldo de cada usuário e quem deve pagar quem.",
+		oneMillionBeers:
+			"Este é um aplicativo simples que serve ao propósito de contar até um milhão de cervejas! Você pode criar seu grupo e começar a adicionar as cervejas, e então ver as métricas dos avanços do grupo em direção à meta!",
 
 		experienceTitle: "Experiência",
 		experienceSubtitle: "Experiência",

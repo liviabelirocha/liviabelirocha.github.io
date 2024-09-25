@@ -10,18 +10,24 @@ import { Container } from "../../styles/components/Experience";
 
 import Title from "../Title";
 
-import { IoLogoReact, IoLogoVue } from "react-icons/io5";
-import { IoIosHourglass } from "react-icons/io";
 import { DiDjango } from "react-icons/di";
-import { SiExpress, SiGooglecloud, SiSupabase } from "react-icons/si";
+import { IoIosHourglass } from "react-icons/io";
+import { IoLogoReact, IoLogoVue } from "react-icons/io5";
+import { SiExpress, SiGooglecloud, SiNestjs, SiSupabase } from "react-icons/si";
 
 export default function Experience() {
 	const { t } = useTranslation();
 
 	const experiences = [
 		{
-			key: 1,
-			title: `Quaddro 2022 - ${t("status")}`,
+			key: 4,
+			title: `Avenue Code 2024 - ${t("status")}`,
+			description: t("desc"),
+			icons: [SiNestjs, IoLogoReact],
+		},
+		{
+			key: 3,
+			title: `Quaddro 2022 - 2024`,
 			description: t("desc"),
 			icons: [SiExpress, IoLogoReact, SiSupabase, SiGooglecloud],
 		},
@@ -32,7 +38,7 @@ export default function Experience() {
 			icons: [SiExpress, IoLogoVue],
 		},
 		{
-			key: 3,
+			key: 1,
 			title: "EadGuru 2020 - 2021",
 			description: t("desc"),
 			icons: [DiDjango, IoLogoVue],

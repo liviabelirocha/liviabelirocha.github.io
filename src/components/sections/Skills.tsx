@@ -3,19 +3,18 @@ import { IoLogoVue } from "react-icons/io5";
 import {
 	SiDjango,
 	SiExpress,
+	SiNestjs,
 	SiPostgresql,
 	SiSolidity,
 	SiSupabase,
-	SiTypescript,
 } from "react-icons/si";
 
 import useTranslation from "../../hooks/useTranslation";
 
 import { Container } from "../../styles/components/Skills";
 
-import Title from "../Title";
 import SkillSection from "../SkillSection";
-import { FaDocker } from "react-icons/fa";
+import Title from "../Title";
 
 export default function Skills() {
 	const { t } = useTranslation();
@@ -31,7 +30,7 @@ export default function Skills() {
 				{ icon: IoLogoVue, name: "VueJs" },
 				{ icon: DiReact, name: "React" },
 				{ icon: DiReact, name: "React Native" },
-				{ icon: SiTypescript, name: "Typescript" },
+				{ icon: SiNestjs, name: "NestJs" },
 			],
 		},
 		{
@@ -47,10 +46,7 @@ export default function Skills() {
 		{
 			key: 3,
 			title: t("s"),
-			skills: [
-				{ icon: SiSolidity, name: "Solidity" },
-				{ icon: FaDocker, name: "Docker" },
-			],
+			skills: [{ icon: SiSolidity, name: "Solidity" }],
 		},
 	];
 

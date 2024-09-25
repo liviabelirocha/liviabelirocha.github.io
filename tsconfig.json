@@ -14,13 +14,6 @@
 		"isolatedModules": true,
 		"jsx": "preserve"
 	},
-	"include": [
-		"next-env.d.ts",
-		"**/*.ts",
-		"**/*.tsx",
-		"src/hooks/useTranslation.js",
-		"src/contexts/LanguageContext.jsx",
-		"src/hooks/useTranslation.js"
-	],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
 	"exclude": ["node_modules"]
 }

@@ -1,16 +1,15 @@
 import {
 	AiFillGithub,
-	AiOutlineInstagram,
 	AiOutlineCopyrightCircle,
-	AiFillHeart
-} from 'react-icons/ai'
-import { FaLinkedinIn } from 'react-icons/fa'
-import useTranslation from '../hooks/useTranslation'
+	AiOutlineInstagram,
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import useTranslation from "../hooks/useTranslation";
 
-import { Container, Icons, Design } from '../styles/components/Footer'
+import { Container, Icons } from "../styles/components/Footer";
 
 export default function Footer() {
-	const { t } = useTranslation()
+	const { t } = useTranslation();
 
 	return (
 		<Container>
@@ -40,18 +39,6 @@ export default function Footer() {
 			<p>
 				Copyright <AiOutlineCopyrightCircle /> Lívia Belizário Rocha
 			</p>
-			<Design>
-				{t('footerText')} &nbsp; <AiFillHeart color="red" /> &nbsp;{' '}
-				{t('by')}
-				&nbsp;
-				<a
-					href="https://www.behance.net/dominicpersaud"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Dominic Persaud
-				</a>
-			</Design>
 		</Container>
-	)
+	);
 }
